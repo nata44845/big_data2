@@ -29,4 +29,4 @@ dataset_path = 'AB_NYC_price.csv'
 with open(dataset_path, "r", encoding='utf8') as file:
     reader = csv.reader(file)
     n, mean, M2 = reduce(reducer, map(mapper, reader))
-    print(n, mean, (M2 / n) ** (1/2))
+    print(f'{n=}, {mean=}, D={(M2 / n) ** (1/2)}')
