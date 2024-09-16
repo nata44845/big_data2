@@ -4,7 +4,7 @@
 homework2.ipynb
 
 ## Закачиваем файл на hive-server, создаем таблицу, закачиваем данные, делаем запрос
-
+```
 cd apachespark/
 cd hdfs/
 sudo docker-compose up -d
@@ -38,5 +38,8 @@ select AVG(price) M,SQRT(VAR_POP(price)) D,MIN(price) minp, MAX(price) maxp from
 | 152.7206871868289  | 240.15171391941672  | 0     | 10000  |
 
 +--------------------+---------------------+-------+--------+
+```
+
 
 ![hive](vb.png)
+
