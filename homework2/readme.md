@@ -19,7 +19,7 @@ select count(*) from AB_NYC;
 48895
 
 
-select AVG(price), VARIANCE(price) from AB_NYC;
+select AVG(price), SQRT(VARIANCE(price)) from AB_NYC;
 
 +--------------------+---------------------+
 |        _c0         |         _c1         |
