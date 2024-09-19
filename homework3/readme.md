@@ -49,8 +49,8 @@ Metrics - Simple - AVG(tavg)
 ### Графики распределения температур
 ```
 SELECT tavg, city FROM temperatures;
-CREATE CHART - Line Chart
-X-axis  - date_temp - Month
+CREATE CHART - Box Plot
+Distribute across - tavg
 Dimensions - city
 Metrics - Simple - AVG(tavg)
 ```
@@ -60,4 +60,4 @@ Metrics - Simple - AVG(tavg)
 
 графики-температур-2024-09-19T06-00-03.249Z.pdf
 
-
+![temperatures](temperatures.png)
